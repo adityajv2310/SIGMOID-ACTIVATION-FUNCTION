@@ -31,7 +31,7 @@ The output of the logistic function is not symmetric around zero. So the output 
 /*
 Program to implement the sigmoid activation function in a feed forward ANN.
 Developed by: Aditya JV
-RegisterNumber: 212220230001
+RegisterNumber: 212220230002
 */
 ```
 ```python
