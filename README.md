@@ -1,7 +1,7 @@
-# EX NO : 05
-# Date :
-
-# <p align="center"> SIGMOID-ACTIVATION-FUNCTION
+### EX NO: 05
+### DATE: 29.04.2022
+# <p align="center"> SIGMOID ACTIVATION FUNCTION</P>
+  
 ## Aim:
   To develop a python code that creates a simple feed-forward neural networks or perception with the Sigmoid activation function. The neuron has to be trained such that it can predict the correct output value when provided with a new set of input data.
   
@@ -12,26 +12,32 @@
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner / Google Colab
 
 ## Related Theoritical Concept:
-Sigmoid Activation Function is commonly used for models where we have to predict the probability as an output. Since probability of anything exists only between the range of 0 and 1, sigmoid is the right choice because of its range. The function is differentiable and provides a smooth gradient, i.e., preventing jumps in output values. This is represented by an S-shape of the sigmoid activation function. The limitations of sigmoid function are : The derivative of the function is f'(x) = sigmoid(x)*(1-sigmoid(x)).
 
-The output of the logistic function is not symmetric around zero. So the output of all the neurons will be of the same sign. This makes the training of the neural network more difficult and unstable.
+* Sigmoid Activation Function is commonly used for models where we have to predict the probability as an output. Since probability of anything exists only between the range of 0 and 1, sigmoid is the right choice because of its range.
+* The function is differentiable and provides a smooth gradient, i.e., preventing jumps in output values. This is represented by an S-shape of the sigmoid activation function. 
+
+#### The limitations of sigmoid function are :
+
+* The derivative of the function is f'(x) = sigmoid(x)*(1-sigmoid(x)).
+
+* The output of the logistic function is not symmetric around zero. So the output of all the neurons will be of the same sign. This makes the training of the neural network more difficult and unstable.
 
 ## Algorithm
-1.Import packages\
-2.Define neural network class\
-3.Model single neuron with 3 inputs and 1 output and assign random weights to a 3 x 1 matrix with values between -1 and 1\
-4.Define sigmoid function and calculate the error\
-5.Multiply the error by the input and again by the gradient of the sigmoid curve\
-6.Initialize a single neuron neural network\
-7.Train neural network using training data\
-8.Test neural network with new data
+1. Import packages
+2. Define neural network class
+3. Model single neuron with 3 inputs and 1 output and assign random weights to a 3 x 1 matrix with values between -1 and 1
+4. Define sigmoid function and calculate the error
+5. Multiply the error by the input and again by the gradient of the sigmoid curve
+6. Initialize a single neuron neural network
+7. Train neural network using training data
+8. Test neural network with new data
 
 ## Program:
 ```
 /*
 Program to implement the sigmoid activation function in a feed forward ANN.
-Developed by: Aditya JV
-RegisterNumber: 212220230002
+Developed by: ADITYA JV
+RegisterNumber:  212220230002
 */
 ```
 ```python
@@ -82,12 +88,11 @@ if __name__=="__main__":
     print("New Output data: ")
     print(neuron.think(np.array([user_input_one, user_input_two, user_input_three])))
     print("Wow, we did it!")
- ```
+           
+```
 
 ## Output:
-![image](https://user-images.githubusercontent.com/75235386/169319289-68cffe75-77d5-4925-b01e-84e2a6746567.png)
-
-
+![output](https://user-images.githubusercontent.com/75235747/169422930-454a8ed0-17b9-4ac3-8c3a-e2e850ed01e5.JPG)
 
 ## Result:
   Thus created a perception to employ the Sigmoid activation function. This neuron was successfully trained to predict the correct output value, when provided with a new set of input data.
